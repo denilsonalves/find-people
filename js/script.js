@@ -79,8 +79,9 @@ function clearInfo() {
 
 function findPerson(nameInput) {
   return allPersons.filter((person) => {
-    const { name } = person;
-    return name.toLowerCase().indexOf(nameInput.toLowerCase()) >= 0;
+    const { name, lastname } = person;
+    const completeName = name + lastname;
+    return completeName.toLowerCase().indexOf(nameInput.toLowerCase()) >= 0;
   });
 }
 
