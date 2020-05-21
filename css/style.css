@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local(Roboto), url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto';
+  height: 100%;
+  background: rgb(53, 52, 52);
+  color: bisque;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+}
+
+input {
+  color: bisque;
+}
+
+.input-field label {
+  color: #575b61;
+}
+
+.input-field input[type='text']:not(.browser-default).validate + label {
+  color: #575b61;
+}
+
+.input-field input[type='text']:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #575b61;
+  box-shadow: 0 1px 0 0 #575b61;
+}
+
+.input-field .prefix.active {
+  color: #575b61;
+}
+
+input.valid:not([type]),
+input.valid:not([type]):focus,
+input.valid[type='text']:not(.browser-default),
+input.valid[type='text']:not(.browser-default):focus,
+input.valid[type='password']:not(.browser-default),
+input.valid[type='password']:not(.browser-default):focus,
+input.valid[type='email']:not(.browser-default),
+input.valid[type='email']:not(.browser-default):focus,
+input.valid[type='url']:not(.browser-default),
+input.valid[type='url']:not(.browser-default):focus,
+input.valid[type='time']:not(.browser-default),
+input.valid[type='time']:not(.browser-default):focus,
+input.valid[type='date']:not(.browser-default),
+input.valid[type='date']:not(.browser-default):focus,
+input.valid[type='datetime']:not(.browser-default),
+input.valid[type='datetime']:not(.browser-default):focus,
+input.valid[type='datetime-local']:not(.browser-default),
+input.valid[type='datetime-local']:not(.browser-default):focus,
+input.valid[type='tel']:not(.browser-default),
+input.valid[type='tel']:not(.browser-default):focus,
+input.valid[type='number']:not(.browser-default),
+input.valid[type='number']:not(.browser-default):focus,
+input.valid[type='search']:not(.browser-default),
+input.valid[type='search']:not(.browser-default):focus,
+textarea.materialize-textarea.valid,
+textarea.materialize-textarea.valid:focus,
+.select-wrapper.valid > input.select-dropdown {
+  border-bottom: 1px solid #575b61;
+  box-shadow: 0 1px 0 0 #575b61;
+}
+
+.find-people {
+  margin-bottom: 0;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+}
